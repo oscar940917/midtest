@@ -17,7 +17,13 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void onSubmitClicked();
+    void onProcessClicked();
+    void onClearClicked();
+
 private:
     Ui::MainWindow *ui;
+    void setupConnections();
 };
 #endif // MAINWINDOW_H
